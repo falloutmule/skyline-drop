@@ -1,5 +1,5 @@
 ---
-{"schema":"sfhs.one-shot-physical-acceptance-report@1","status":"REPORTED","facts":{"result":"REPORTED PASS","artifact":{"classification":"canonical","path":"dist/index.html","bytes":2091772,"sha256":"d7e95638ad9d31e924fbf9ba9d8f4d95070d06a57b4ade461a2c42ab1f726721","buildId":"skyline-drop-cfb081a04f41"},"graduationStatus":"GRADUATION_COMPLETE","formalMetadataStatus":"INCOMPLETE"}}
+{"schema":"sfhs.one-shot-physical-acceptance-report@1","status":"REPORTED","facts":{"result":"REPORTED PASS","artifact":{"classification":"canonical","path":"dist/index.html","bytes":2091772,"sha256":"d7e95638ad9d31e924fbf9ba9d8f4d95070d06a57b4ade461a2c42ab1f726721","buildId":"skyline-drop-cfb081a04f41"},"latestUserReport":{"receivedDate":"2026-08-06","functionalChecks":"PASS","bugsDetected":false},"graduationStatus":"GRADUATION_COMPLETE","formalMetadataStatus":"INCOMPLETE"}}
 ---
 
 # Physical Acceptance Report
@@ -15,6 +15,8 @@ The user reported `REPORTED PASS` for the exact canonical Skyline Drop artifact:
 
 This establishes reported physical product acceptance for that artifact and sets the project graduation status to `GRADUATION_COMPLETE`. It does not upgrade the physical result to `VERIFIED`.
 
+On 2026-08-06, the user reconfirmed: “Samsung acceptance passed everything functional no bugs detected.” This is recorded as all functional checks passing with no bugs detected against the exact current Pages artifact. It remains user-authored `REPORTED` evidence.
+
 ## Formal metadata not supplied
 
 The report did not include the following fields. They are deliberately recorded as absent rather than inferred from the target test seed:
@@ -25,6 +27,6 @@ The report did not include the following fields. They are deliberately recorded 
 - numeric Chrome version;
 - portrait and landscape viewport width, height, and DPR;
 - required screenshots or rotate-gate capture;
-- field-level checklist notes, including audio, lifecycle, performance, heat, and spatial-readability observations.
+- separately itemized field-level notes for audio, lifecycle, performance, heat, and spatial readability.
 
 This evidence-detail gap is tracked as deferred issue `I-005`. A future repeat session should use `PHYSICAL-TEST-SEED.json` and `PHYSICAL-TEST-INSTRUCTIONS.md`; it must bind any result to its exact tested artifact rather than retroactively altering this report.

@@ -1,0 +1,14 @@
+{
+  "browserEvidence": "evidence/current/canonical-browser.txt",
+  "canonicalArtifact": {
+    "buildId": "skyline-drop-cfb081a04f41",
+    "bytes": 2091772,
+    "path": "dist/index.html",
+    "sha256": "d7e95638ad9d31e924fbf9ba9d8f4d95070d06a57b4ade461a2c42ab1f726721",
+    "verifier": "sfhs verify"
+  },
+  "physical": "REPORTED",
+  "remoteActions": "not-authorized",
+  "schema": "sfhs.graduation-report@1",
+  "stage": "GRADUATION_COMPLETE"
+}

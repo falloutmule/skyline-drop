@@ -1,0 +1,41 @@
+name: Verify Skyline Drop
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.9.0
+      - uses: actions/checkout@v4
+        with:
+          repository: falloutmule/single-file-html-software
+          ref: 4248c67021e930b7fb4a882f73dfd8ab87df0ee7
+          path: .sfhs-core
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: .sfhs-core/pnpm-lock.yaml
+      - run: pnpm --dir .sfhs-core install --frozen-lockfile
+      - name: Overlay authoritative game source
+        run: |
+          rsync -a --delete \
+            --exclude .git --exclude .sfhs-core --exclude node_modules --exclude dist \
+            --exclude .candidate --exclude test-results --exclude historical \
+            ./ .sfhs-core/examples/skyline-drop/
+      - run: pnpm --dir .sfhs-core sfhs inspect --project examples/skyline-drop --json
+      - run: pnpm --dir .sfhs-core sfhs validate --project examples/skyline-drop --json
+      - run: pnpm --dir .sfhs-core sfhs check --project examples/skyline-drop --changed examples/skyline-drop/src --json
+      - run: pnpm --dir .sfhs-core sfhs pack --project examples/skyline-drop --json
+      - run: pnpm --dir .sfhs-core sfhs verify --project examples/skyline-drop --json
+      - run: pnpm --dir .sfhs-core --filter @sfhs/example-skyline-drop run test:browser:canonical

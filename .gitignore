@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.candidate/
+.sfhs-evidence/
+test-results/
+MATERIALIZATION.json
+.DS_Store

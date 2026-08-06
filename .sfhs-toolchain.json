@@ -1,0 +1,8 @@
+{
+  "schema": "sfhs.external-toolchain@1",
+  "repository": "falloutmule/single-file-html-software",
+  "commit": "4248c67021e930b7fb4a882f73dfd8ab87df0ee7",
+  "adapter": "pixi-v8",
+  "node": ">=24",
+  "pnpm": "11.9.0"
+}

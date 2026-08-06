@@ -1,0 +1,33 @@
+{
+  "deferredWork": [],
+  "evidenceStatus": "UNTESTED",
+  "nextAction": "Graduation complete; move optional work into a separately authorized backlog.",
+  "physicalStatus": "REPORTED",
+  "productStatus": "PRODUCT_INCOMPLETE",
+  "projectRoot": ".",
+  "records": {
+    "physicalSeed": {
+      "path": "one-shot/GRADUATION-PHYSICAL-TEST-SEED.json",
+      "sha256": "4ad642ea678c31fd1188f3d75e21a7e19d70b3935c7129e1c2908a7d337eacd6"
+    },
+    "plan": {
+      "path": "one-shot/MIGRATION-PLAN.json",
+      "sha256": "94c71e0291df1e4710498cf381762562953e2aa66422a30317e0e1bbe7af28f1"
+    },
+    "report": {
+      "path": "one-shot/GRADUATION-REPORT.json",
+      "sha256": "9e140ae5a7a4f835ea13146033ccfa9a649adba8fb28a37f43ddec3106126022"
+    },
+    "source": {
+      "path": "SOURCE-IDENTITY.json",
+      "sha256": "568aecf87d56f7ca77b34523568b5a0b85dd15eb8251779e1650e360885057b1"
+    }
+  },
+  "requiredRepairs": [],
+  "schema": "sfhs.graduation-state@1",
+  "sfhsStatus": "SFHS_SOURCE_ONLY",
+  "sourceId": "source-1-b0e7c78c2d80",
+  "stage": "GRADUATION_COMPLETE",
+  "strategy": "DIRECT_CANONICALIZATION",
+  "version": 1
+}

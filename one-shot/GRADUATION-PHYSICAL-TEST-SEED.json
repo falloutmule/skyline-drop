@@ -1,0 +1,26 @@
+{
+  "artifact": {
+    "buildId": "skyline-drop-cfb081a04f41",
+    "bytes": 2091772,
+    "path": "dist/index.html",
+    "sha256": "d7e95638ad9d31e924fbf9ba9d8f4d95070d06a57b4ade461a2c42ab1f726721",
+    "verifier": "sfhs verify"
+  },
+  "classification": "canonical",
+  "required": [
+    "device model",
+    "Android version",
+    "numeric Chrome version",
+    "portrait and landscape viewport dimensions and DPR",
+    "screenshots",
+    "primary workflow",
+    "background/return",
+    "audio",
+    "performance and heat"
+  ],
+  "resultVocabulary": [
+    "REPORTED PASS",
+    "REPORTED FAIL"
+  ],
+  "schema": "sfhs.graduation-physical-test-seed@1"
+}

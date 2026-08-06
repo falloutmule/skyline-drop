@@ -35,6 +35,8 @@ jobs:
             ./ .sfhs-core/examples/skyline-drop/
       - run: pnpm --dir .sfhs-core sfhs inspect --project examples/skyline-drop --json
       - run: pnpm --dir .sfhs-core sfhs validate --project examples/skyline-drop --json
+      - name: Run focused simulation tests
+        run: pnpm --dir .sfhs-core --filter @sfhs/example-skyline-drop run test:simulation
       - run: pnpm --dir .sfhs-core sfhs check --project examples/skyline-drop --changed examples/skyline-drop/src --json
       - run: pnpm --dir .sfhs-core sfhs pack --project examples/skyline-drop --json
       - run: pnpm --dir .sfhs-core sfhs verify --project examples/skyline-drop --json

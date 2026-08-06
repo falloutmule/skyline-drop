@@ -14,5 +14,6 @@
 - Deployed bytes: `2,091,772`
 - Deployed SHA-256: `d7e95638ad9d31e924fbf9ba9d8f4d95070d06a57b4ade461a2c42ab1f726721`
 - Local/deployed parity: `VERIFIED`
+- Samsung acceptance: `REPORTED PASS` — all functional checks passed; no bugs detected (user report received 2026-08-06)
 
-`verify.json` records the exact SFHS verifier result. `canonical-browser.txt` records the artifact-bound Chromium smoke pass (one WebGL canvas, placement, pause/resume, resize, no page errors, and no runtime external requests). `deployment.json` records the successful Pages workflow, downloaded-byte comparison, and live public interaction.
+`verify.json` records the exact SFHS verifier result. `canonical-browser.txt` records the artifact-bound Chromium smoke pass (one WebGL canvas, placement, pause/resume, resize, no page errors, and no runtime external requests). `deployment.json` records the successful Pages workflow, downloaded-byte comparison, live public interaction, and artifact-bound reported Samsung result. `physical-acceptance.md` preserves the current concise device report.

@@ -14,7 +14,7 @@ Controls: Arrow keys/WASD move; Q/E rotate; M remix the current eligible distric
 
 Implemented: surface and underground planning, connected roads and utilities, authored Road Remix layouts, shared-road ownership, utility overlap, inspection, touch controls, fullscreen, pause/restart/progression, three levels, and a Pixi/WebGL presentation.
 
-Known limitation: the exact canonical artifact received a user `REPORTED PASS` on Samsung Galaxy S21 Ultra, but the formal device/session metadata and screenshots were not supplied. No automated browser result is presented as physical-device acceptance.
+Samsung acceptance: the exact canonical artifact received a user `REPORTED PASS`; all functional checks passed and no bugs were detected. Formal device/session metadata and screenshots were not supplied, so the result remains reported rather than independently verified. No automated browser result is presented as physical-device acceptance.
 
 ## Source, artifact, and verification
 

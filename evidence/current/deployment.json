@@ -26,5 +26,12 @@
     "pageErrors": [],
     "externalRuntimeRequests": []
   },
-  "physicalDeviceAcceptance": "REPORTED"
+  "physicalDeviceAcceptance": {
+    "status": "REPORTED",
+    "result": "REPORTED PASS",
+    "reportReceived": "2026-08-06",
+    "functionalChecks": "PASS",
+    "bugsDetected": false,
+    "formalMetadataStatus": "INCOMPLETE"
+  }
 }

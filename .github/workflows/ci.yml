@@ -27,6 +27,8 @@ jobs:
           cache: pnpm
           cache-dependency-path: .sfhs-core/pnpm-lock.yaml
       - run: pnpm --dir .sfhs-core install --frozen-lockfile
+      - name: Install pinned Chromium for canonical browser verification
+        run: pnpm --dir .sfhs-core --filter @sfhs/example-skyline-drop exec playwright install --with-deps chromium
       - name: Overlay authoritative game source
         run: |
           rsync -a --delete \

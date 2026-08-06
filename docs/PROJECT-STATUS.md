@@ -8,9 +8,9 @@
 | Roads, utility connections, remix, inspection | IMPLEMENTED | Preserved source and milestone repair evidence. |
 | Canonical artifact | VERIFIED | `skyline-drop-cfb081a04f41`, 2,091,772 bytes, SHA-256 `d7e956…6721`; exact records in `evidence/current/`. |
 | Desktop browser acceptance | VERIFIED | Artifact-bound Chromium smoke passed; legacy proof remains a milestone only. |
-| Samsung Galaxy S21 Ultra acceptance | PARTIAL | Previous artifact: REPORTED PASS. Current artifact: untested until a new artifact-bound session. |
-| GitHub Pages | PLANNED | Deployment occurs only after CI packs and exactly verifies the current source. |
+| Samsung Galaxy S21 Ultra acceptance | PARTIAL | Exact current artifact: user `REPORTED PASS`; formal session metadata and screenshots remain incomplete, so this is not independently `VERIFIED`. |
+| GitHub Pages | VERIFIED | Run `31098798229` deployed the SFHS-packed artifact; HTTP 200, live placement smoke, and downloaded SHA-256 parity passed. |
 
-Known limitations: no formal Samsung session metadata/screenshots exist for the legacy reported pass; mobile acceptance cannot transfer automatically to a new artifact. No known runtime external dependencies are permitted.
+Known limitations: no formal Samsung session metadata/screenshots exist for the artifact-bound reported pass. No known runtime external dependencies are permitted.
 
-Release readiness is blocked until a successful Pages deployment and its downloaded-byte comparison are recorded. Physical-device release acceptance remains pending unless a newly bound device report is supplied.
+The verified GitHub Pages preview is published. Formal physical-device evidence remains incomplete; the public preview and automated verification do not upgrade that result to independently verified physical acceptance.

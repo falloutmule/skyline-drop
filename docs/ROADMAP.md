@@ -4,7 +4,6 @@
 
 | Item | Status | Acceptance condition |
 | --- | --- | --- |
-| Regenerate and publish the canonical SFHS artifact | APPROVED | Exact verifier and Chromium smoke retain current evidence; GitHub Pages serves matching bytes. |
 | Formal Samsung retest | APPROVED | Artifact-bound S21 Ultra / Android Chrome report includes required session metadata and result. |
 
 ## Next

@@ -1,0 +1,30 @@
+{
+  "schema": "skyline-drop.deployment-evidence@1",
+  "status": "VERIFIED",
+  "verifiedAt": "2026-08-06",
+  "pagesUrl": "https://falloutmule.github.io/skyline-drop/",
+  "workflow": {
+    "runId": 31098798229,
+    "url": "https://github.com/falloutmule/skyline-drop/actions/runs/31098798229",
+    "sourceCommit": "1db4ecfca072f30a2d4131de3d35903cb59eedb2",
+    "conclusion": "success"
+  },
+  "artifact": {
+    "buildId": "skyline-drop-cfb081a04f41",
+    "path": "dist/index.html",
+    "localBytes": 2091772,
+    "deployedBytes": 2091772,
+    "localSha256": "d7e95638ad9d31e924fbf9ba9d8f4d95070d06a57b4ade461a2c42ab1f726721",
+    "deployedSha256": "d7e95638ad9d31e924fbf9ba9d8f4d95070d06a57b4ade461a2c42ab1f726721",
+    "parity": "VERIFIED"
+  },
+  "liveSmoke": {
+    "httpStatus": 200,
+    "phaseAfterInteraction": "playing",
+    "turnAfterInteraction": 1,
+    "canvasCount": 1,
+    "pageErrors": [],
+    "externalRuntimeRequests": []
+  },
+  "physicalDeviceAcceptance": "REPORTED"
+}

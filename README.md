@@ -4,7 +4,7 @@
 
 Play: https://falloutmule.github.io/skyline-drop/
 
-Current status: canonical desktop verification is being regenerated from the imported SFHS source. The prior device result is retained as **reported**, not independently verified, and applies only to the previous artifact described in [PROJECT-STATUS.md](docs/PROJECT-STATUS.md).
+Current status: the canonical artifact is deployed to GitHub Pages with verified local/deployed byte parity. The artifact-bound Samsung result is retained as **reported**, not independently verified; its formal session metadata and screenshots remain incomplete as described in [PROJECT-STATUS.md](docs/PROJECT-STATUS.md).
 
 ## Play
 
@@ -14,7 +14,7 @@ Controls: Arrow keys/WASD move; Q/E rotate; M remix the current eligible distric
 
 Implemented: surface and underground planning, connected roads and utilities, authored Road Remix layouts, shared-road ownership, utility overlap, inspection, touch controls, fullscreen, pause/restart/progression, three levels, and a Pixi/WebGL presentation.
 
-Known limitation: a new canonical build still needs a fresh artifact-bound Samsung Galaxy S21 Ultra session. No automated browser result is presented as physical-device acceptance.
+Known limitation: the exact canonical artifact received a user `REPORTED PASS` on Samsung Galaxy S21 Ultra, but the formal device/session metadata and screenshots were not supplied. No automated browser result is presented as physical-device acceptance.
 
 ## Source, artifact, and verification
 
@@ -22,7 +22,7 @@ Known limitation: a new canonical build still needs a fresh artifact-bound Samsu
 
 The repository deliberately uses SFHS as an external pinned toolchain rather than vendoring the framework. See [ARCHITECTURE.md](docs/ARCHITECTURE.md) and [TESTING.md](docs/TESTING.md) for the local materialization, validation, packing, verification, browser, and Pages paths.
 
-Current artifact: `skyline-drop-cfb081a04f41`; `dist/index.html`; 2,091,772 bytes; SHA-256 `d7e95638ad9d31e924fbf9ba9d8f4d95070d06a57b4ade461a2c42ab1f726721`; verified 2026-08-06. The Pages URL is recorded here only after deployed-byte parity is checked.
+Current artifact: `skyline-drop-cfb081a04f41`; `dist/index.html`; 2,091,772 bytes; SHA-256 `d7e95638ad9d31e924fbf9ba9d8f4d95070d06a57b4ade461a2c42ab1f726721`; verified 2026-08-06. GitHub Pages serves the same 2,091,772 bytes at https://falloutmule.github.io/skyline-drop/; deployed SHA-256 and local/deployed parity are **VERIFIED**.
 
 ## Development
 
